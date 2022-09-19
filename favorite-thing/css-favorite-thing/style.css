@@ -1,8 +1,15 @@
-.container {
-    margin: 20px 50px;
+div.container-margins {
+    margin: 30px 50px;
     padding: 100px;
     border: 1px solid black;
     background-color: white;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+    color: indigo;
 }
 
 body {
@@ -14,7 +21,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(144, 202, 238);
+    background-color: lightblue;
 }
 
 ul li {
