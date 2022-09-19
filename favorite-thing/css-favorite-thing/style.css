@@ -14,7 +14,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: lightblue;
+    background-color: rgb(144, 202, 238);
 }
 
 ul li {
@@ -30,5 +30,5 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: aliceblue;
+    background-color: rgb(90, 182, 239);
 }
