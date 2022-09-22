@@ -5,7 +5,7 @@ div.container {
     background-color: white;
 }
 
-li a,
+ul.nav li a,
 .dropbtn {
     display: inline-block;
     color: white;
@@ -14,7 +14,7 @@ li a,
     text-decoration: none;
 }
 
-li.dropdown {
+ul.nav li.dropdown {
     display: inline-block;
 }
 
@@ -22,9 +22,10 @@ li.dropdown {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    text-align: left;
 }
 
 .dropdown-content a {
@@ -47,17 +48,21 @@ li.dropdown {
     display: block;
 }
 
+.jype-emails {
+    text-align: left;
+}
+
 h1,
 h2 {
     text-align: center;
-    color: indigo;
+    color: black;
 }
 
 body {
     background-color: darkred;
 }
 
-ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -66,11 +71,11 @@ ul {
     border: 3px solid black;
 }
 
-ul li {
+ul.nav li {
     float: left;
 }
 
-ul li a {
+ul.nav li a {
     display: block;
     padding: 14px 16px;
     text-align: center;
@@ -80,6 +85,19 @@ ul li a {
     font-family: 'Times New Roman', Times, serif;
 }
 
-ul li a:hover {
+ul.nav li a:hover {
     background-color: rgba(93, 4, 4, 0.696);
+}
+
+.descriptive-paragraphs {
+    font-size: large;
+    text-align: center;
+}
+
+.intro-page {
+    float: left;
+    width: 500px;
+    font-size: larger;
+    padding-left: 50px;
+    text-align: left;
 }
