@@ -92,12 +92,22 @@ ul.nav li a:hover {
 .descriptive-paragraphs {
     font-size: large;
     text-align: center;
+    max-width: 1000px;
+    padding-left: 40px;
 }
 
-.intro-page {
-    float: left;
-    width: 500px;
-    font-size: larger;
-    padding-left: 50px;
-    text-align: left;
+ul.fact-lists li {
+    font-size: large;
+    text-align: center;
+    max-width: 1000px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.resource-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
