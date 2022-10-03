@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(254, 255, 176);
+    border: 3px solid black;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    font-family: bely, serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+ul li a:hover {
+    background-color: rgb(255, 255, 225);
+}
+
+.grid-item {}
