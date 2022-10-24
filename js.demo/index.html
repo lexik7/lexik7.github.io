@@ -19,7 +19,7 @@
     <h2>What's my secret identity?</h2>
     <p id="secret"></p>
     <button
-        onclick="document.getElementById('secret').innerHTML='Nana nana nana nana, batman!'; document.getElementById('secret').style.display='block'"">Reveal!</button>
+        onclick="document.getElementById('secret').innerHTML='Nana nana nana nana, batman!'; document.getElementById('secret').style.display='block'">Reveal!</button>
 
     <hr>
 
@@ -29,69 +29,69 @@
         <li>The sky is blue</li>
         <li id=" lie">The earth is flat</li>
         <li>Stray Kids outsold</li>
-        </ol>
-        <button onclick="document.getElementById(' lie').style.color='red';">Reveal!</button>
-        <button onclick="document.getElementById(' lie').style.color='black'">Hide!</button>
+    </ol>
+    <button onclick="document.getElementById(' lie').style.color='red';">Reveal!</button>
+    <button onclick="document.getElementById(' lie').style.color='black'">Hide!</button>
 
-        <hr>
+    <hr>
 
-        <h2>How do we change images with javascript?</h2>
-        <img src=" images/lightbulb.JPG" alt="light-bulb" id="my-image">
-        <button onclick="document.getElementById('my-image').src='images/lightbulb-on.JPG';">Turn on light!</button>
-        <button onclick="document.getElementById('my-image').src='images/lightbulb.JPG';">Turn off
-            light!</button>
+    <h2>How do we change images with javascript?</h2>
+    <img src=" images/lightbulb.JPG" alt="light-bulb" id="my-image">
+    <button onclick="document.getElementById('my-image').src='images/lightbulb-on.JPG';">Turn on light!</button>
+    <button onclick="document.getElementById('my-image').src='images/lightbulb.JPG';">Turn off
+        light!</button>
 
-        <hr>
+    <hr>
 
-        <h2>How do I change css styles with a button?</h2>
-        <p id="alice">Hi. I am Alice.</p>
-        <button
-            onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake:
-            Eat me</button>
-        <button
-            onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='40px'">Potion:
-            Drink me.</button>
-        <button onclick="normalAlice();">Return to normal</button>
+    <h2>How do I change css styles with a button?</h2>
+    <p id="alice">Hi. I am Alice.</p>
+    <button
+        onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake:
+        Eat me</button>
+    <button
+        onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='40px'">Potion:
+        Drink me.</button>
+    <button onclick="normalAlice();">Return to normal</button>
 
-        <hr>
+    <hr>
 
-        <h2>How do we return use input data?</h2>
-        <button onclick="askName();">What's your name?</button>
-        <p id="ask-name"></p>
+    <h2>How do we return use input data?</h2>
+    <button onclick="askName();">What's your name?</button>
+    <p id="ask-name"></p>
 
-        <hr>
+    <hr>
 
-        <h2>How can we change the color of the page?</h2>
-        <button onclick="document.body.style.backgroundColor='lightblue';">Change color now!</button>
-        <button onclick="document.body.style.backgroundColor='white';">Return to normal</button>
+    <h2>How can we change the color of the page?</h2>
+    <button onclick="document.body.style.backgroundColor='lightblue';">Change color now!</button>
+    <button onclick="document.body.style.backgroundColor='white';">Return to normal</button>
 
-        <hr>
+    <hr>
 
-        <h2>How can we change the color of all the text?</h2>
-        <button onclick="document.body.style.textAlign='right';">Shift text to the right</button>
-        <button onclick="document.body.style.textAlign='left';">Return to normal</button>
+    <h2>How can we change the color of all the text?</h2>
+    <button onclick="document.body.style.textAlign='right';">Shift text to the right</button>
+    <button onclick="document.body.style.textAlign='left';">Return to normal</button>
 
-        <script>
+    <script>
 
-            function normalAlice() {
-                let aliceParagraph = document.getElementById('alice');
-                aliceParagraph.style.color = 'black';
-                aliceParagraph.style.fontSize = '20px';
+        function normalAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize = '20px';
+        }
+
+        function askName() {
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt("What is your name?");
+            // decide what to do
+            if (name === "batman") {
+                nameParagraph.innerHTML = "welcome to the batcave sir"
             }
-
-            function askName() {
-                let nameParagraph = document.getElementById('ask-name');
-                let name = prompt("What is your name?");
-                // decide what to do
-                if (name === "batman") {
-                    nameParagraph.innerHTML = "welcome to the batcave sir"
-                }
-                else {
-                    nameParagraph.innerHTML = "Hello " + name + "! Nice to meet you."
-                }
+            else {
+                nameParagraph.innerHTML = "Hello " + name + "! Nice to meet you."
             }
+        }
 
-        </script>
+    </script>
 </body>
 
 </html>
