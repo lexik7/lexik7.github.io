@@ -5,48 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Tree Kirkland</title>
+    <title>BookTree Kirkland</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/krp5fdb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rco5fzg.css">
     <style>
 
     </style>
 </head>
 
 <body>
-    <ul class="navbar" style="margin-top:50px; margin-right:50px;">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
+    <ul class="navbar" style="margin-top:50px; margin-right:50px; margin-left:50px;">
+        <img src="images/logo.png" alt="Book Tree Logo" style="width:115px;" class="logo">
         <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
     </ul>
     </div>
     <div class="grid-container">
+        <!-- Slideshow container -->
+        <div class="slideshow-container grid-item1">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/main-image.jpg" style="width:100%">
+                <div class="text">BookTree Kirkland</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/kids-book.jpg" style="width:100%">
+                <div class="text">Wide variety of books for readers of all ages!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/book.jpg" style="width:100%">
+                <div class="text">Expreience the smell of a freshly cracked book</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/readings.jpg" style="width:100%">
+                <div class="text">Event space for local writers and artists</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
         <div class="grid-item main-image">
             <div class="title1">
-                <h1>Book Tree Kirkland</h1>
+                <h1>BookTree Kirkland</h1>
                 <p>Come Visit the Eastside's Independent Bookstore!</p>
             </div>
         </div>
         <div class="grid-item main1">
-            <h1>Our Store</h1>
-            <p>"Our goal is to help every book browser find an interesting satisfying new or gently-used book. We host
+            <h1>Our Mission</h1>
+            <p>BookTree's goal is to help every book browser find an interesting satisfying new or gently-used
+                book. We host
                 book clubs, offer special author events, workshops and readings. BookTree is a sanctuary for book lovers
-                and a community gathering place. See YOU soon!" - Christopher J. Jarmick – Co-Founder of BookTree
-                Kirkland </p>
+                and a community gathering place. </p>
         </div>
         <div class="grid-item support-section1">
             <h1>Hours and Address</h1>
         </div>
         <div class="grid-item quote1">
-            <h1>Quote 1</h1>
-            <p>"What I say is, a town isn't a town without a bookstore. It may call itself a town but unless it's got a
+            <p class="quotes">"What I say is, a town isn't a town without a bookstore. It may call itself a town but
+                unless it's got a
                 bookstore, it knows it's not foolin' a soul." - Neil Gaiman</p>
         </div>
 
         <div class="grid-item quote2">
             <h1>Quote 2</h1>
+            <p class="quotes"></p>
         </div>
         <div class="grid-item main2">
             <h1>Events Calendar</h1>
@@ -70,7 +113,7 @@
     <script>
         function ESA() {
             let ESAparagraph = document.getElementById('esa')
-            ESAparagraph.innerHTML = 'Congress passed the Endangered Species Act in 1973, which declared the US federal government responsibility to protect endangered species and habitats in the country. To implement the ESA, other federal agencies were created such as: the US Fish and Wildlife Service, the US National Oceanic and Atmospheric Administration Fisheries Service, and more!';
+            ESAparagraph.innerHTML = '';
             ESAparagraph.style.display = 'block'
         }
     </script>
