@@ -8,23 +8,19 @@
     <title>BookTree Kirkland</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/rco5fzg.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
-    <ul class="navbar" style="margin-top:50px; margin-right:50px; margin-left:50px;">
-        <img src="images/logo.png" alt="Book Tree Logo" style="width:115px;" class="logo">
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Home</a></li>
-    </ul>
-    </div>
     <div class="grid-container">
         <!--Add slideshow in main image section!!-->
+        <img class="logo" src="images/logo.png" alt="Book Tree Logo" style="width:115px;" class="logo">
+        <ul class="navbar navmenu" style="margin-top:50px; margin-right:50px; margin-left:50px;">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
         <div class="grid-item main-image">
             <div class="title1">
                 <h1>BookTree Kirkland</h1>
@@ -32,11 +28,40 @@
             </div>
         </div>
         <div class="grid-item main1">
-            <h1>Our Mission</h1>
-            <p>BookTree's goal is to help every book browser find an interesting satisfying new or gently-used
-                book. We host
-                book clubs, offer special author events, workshops and readings. BookTree is a sanctuary for book lovers
-                and a community gathering place. </p>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/kids-book.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/book.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/readings.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
         <div class="grid-item support-section1">
             <h1>Store hours:</h1>
@@ -70,6 +95,11 @@
                     <td>CLOSED</td>
                 </tr>
             </table>
+            <h1>Our Mission</h1>
+            <p>BookTree's goal is to help every book browser find an interesting satisfying new or gently-used
+                book. We host
+                book clubs, offer special author events, workshops and readings. BookTree is a sanctuary for book lovers
+                and a community gathering place. </p>
         </div>
         <div class="grid-item">
             <h1>Visit Us</h1>
@@ -131,6 +161,34 @@
             let ESAparagraph = document.getElementById('esa')
             ESAparagraph.innerHTML = '';
             ESAparagraph.style.display = 'block'
+        }
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
     </script>
 </body>
