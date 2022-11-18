@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookTree Kirkland</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rco5fzg.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <!--Add slideshow in main image section!!-->
+        <img class="logo" src="images/logo.png" alt="Book Tree Logo" style="width:115px;" class="logo">
+        <ul class="navbar navmenu" style="margin-top:50px; margin-right:50px; margin-left:50px;">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <div class="grid-item main-image">
+            <div class="title1">
+                <h1>BookTree Kirkland</h1>
+                <p>Come Visit the Eastside's Independent Bookstore!</p>
+            </div>
+        </div>
+        <div class="grid-item main1">
+            <!-- Slideshow container -->
+            <h1>Our Mission</h1>
+            <p>BookTree's goal is to help every book browser find an interesting satisfying new or gently-used
+                book. We host
+                book clubs, offer special author events, workshops and readings. BookTree is a sanctuary for book lovers
+                and a community gathering place. </p>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/kids-book.jpg" style="width:100%; filter: brightness(75%);">
+                    <div class="text">Wide variety of books for readers of all
+                        ages</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/book.jpg" style="width:100%; filter: brightness(75%);">
+                    <div class="text">Experience the smell of a freshly cracked book</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/readings.jpg" style="width:100%; filter: brightness(70%);">
+                    <div class="text">Event space for local writers and artists</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        </div>
+
+        <div class="grid-item visit-us">
+            <h1>Visit Us</h1>
+            <p>609 Market St. Kirkland Wa, 98033</p>
+            <img src="images/visit.JPG" alt="visit" style="width:400px; padding:10px">
+            <br>
+            <a href="https://goo.gl/maps/MoYXELgF5nmySiy48" target="_blank" class="button">Open
+                in Google
+                Maps!</a>
+            <br>
+        </div>
+
+        <div class="grid-item quote2 quote-container">
+            <img src="images/quote-background.jpg" alt="visit"
+                style="width:250px; padding:5px; filter: brightness(60%);">
+            <p class="quotes">"What I say is, a town isn't a town without a bookstore. It may call itself a town but
+                unless it's got a
+                bookstore, it knows it's not foolin' a soul." - Neil Gaiman</p>
+        </div>
+        <div class="grid-item main2">
+            <h1>Events Calendar</h1>
+            <img src="images/events-calendar.jpg" alt="visit" style="width:300px; padding:10px">
+            <br>
+            <a href="events.html" class="button">See upcoming BookTree
+                events!</a>
+        </div>
+        <div class="grid-item sidenav side-resources">
+            <h1>Store hours:</h1>
+            <table>
+                <tr>
+                    <td>Monday</td>
+                    <td>11:30am-5:30pm</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>11:30am-5:30pm</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>11:30am-5:30pm</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>CLOSED</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>11:30am-5:30pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>11:30am-5:30pm</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>CLOSED</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="email" style="text-align:center">
+            <h2>Get events, coupons and store
+                updates delivered straight to your inbox!</h2>
+            <form action="" id="subscribe">
+                <input type="text" name="greet" id="eaddress" placeholder="Email Address"><br>
+            </form>
+            <br>
+            <input type="button" value="SUBSCRIBE" onclick="greet();">
+            <p id="greet"></p>
+
+
+            <p style="text-align:right">BOOKTREE | (425) 202-7791</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // function for the greet
+        function greet() {
+            // grab the greet paragraph
+            let greetParagraph = document.getElementById("greet");
+
+            // get values from the form
+            eaddress = document.getElementById("eaddress").value;
+            greetParagraph.innerHTML = "Thank you for signing up! Your " + eaddress + " inbox will begin recieving BookTree updates shortly!";
+        }
+    </script>
+</body>
+
+</html>
