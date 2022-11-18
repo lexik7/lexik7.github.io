@@ -8,6 +8,15 @@
     <title>BookTree Kirkland</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/rco5fzg.css">
+    <style>
+        #greet {
+            font-family: baskerville-display-pt, serif;
+
+            font-weight: 700;
+
+            font-style: normal;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,25 +38,31 @@
         </div>
         <div class="grid-item main1">
             <!-- Slideshow container -->
+            <h1>Our Mission</h1>
+            <p>BookTree's goal is to help every book browser find an interesting satisfying new or gently-used
+                book. We host
+                book clubs, offer special author events, workshops and readings. BookTree is a sanctuary for book lovers
+                and a community gathering place. </p>
             <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
-                    <img src="images/kids-book.jpg" style="width:100%">
-                    <div class="text">Caption Text</div>
+                    <img src="images/kids-book.jpg" style="width:100%; filter: brightness(75%);">
+                    <div class="text">Wide variety of books for readers of all
+                        ages</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
-                    <img src="images/book.jpg" style="width:100%">
-                    <div class="text">Caption Two</div>
+                    <img src="images/book.jpg" style="width:100%; filter: brightness(75%);">
+                    <div class="text">Experience the smell of a freshly cracked book</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
-                    <img src="images/readings.jpg" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <img src="images/readings.jpg" style="width:100%; filter: brightness(70%);">
+                    <div class="text">Event space for local writers and artists</div>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -55,15 +70,34 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
-
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
         </div>
-        <div class="grid-item support-section1">
+
+        <div class="grid-item visit-us">
+            <h1>Visit Us</h1>
+            <p>609 Market St. Kirkland Wa, 98033</p>
+            <img src="images/visit.JPG" alt="visit" style="width:400px; padding:10px">
+            <br>
+            <a href="https://goo.gl/maps/MoYXELgF5nmySiy48" target="_blank" class="button">Open
+                in Google
+                Maps!</a>
+            <br>
+        </div>
+
+        <div class="grid-item quote2 quote-container">
+            <img src="images/quote-background.jpg" alt="visit"
+                style="width:250px; padding:5px; filter: brightness(60%);">
+            <p class="quotes">"What I say is, a town isn't a town without a bookstore. It may call itself a town but
+                unless it's got a
+                bookstore, it knows it's not foolin' a soul." - Neil Gaiman</p>
+        </div>
+        <div class="grid-item main2">
+            <h1>Events Calendar</h1>
+            <img src="images/events-calendar.jpg" alt="visit" style="width:300px; padding:10px">
+            <br>
+            <a href="events.html" class="button">See upcoming BookTree
+                events!</a>
+        </div>
+        <div class="grid-item sidenav side-resources">
             <h1>Store hours:</h1>
             <table>
                 <tr>
@@ -95,61 +129,20 @@
                     <td>CLOSED</td>
                 </tr>
             </table>
-            <h1>Our Mission</h1>
-            <p>BookTree's goal is to help every book browser find an interesting satisfying new or gently-used
-                book. We host
-                book clubs, offer special author events, workshops and readings. BookTree is a sanctuary for book lovers
-                and a community gathering place. </p>
+
         </div>
-        <div class="grid-item">
-            <h1>Visit Us</h1>
-            <p>609 Market St. Kirkland Wa, 98033</p>
-            <img src="images/visit.JPG" alt="visit" style="width:300px; padding:10px">
-            <a href="https://goo.gl/maps/MoYXELgF5nmySiy48" target="_blank" class="button">Open
-                in Google
-                Maps!</a>
+        <div class="email" style="text-align:center">
+            <h2>Get events, coupons and store
+                updates delivered straight to your inbox!</h2>
+            <form action="" id="subscribe">
+                <input type="text" name="greet" id="eaddress" placeholder="Email Address"><br>
+            </form>
             <br>
-        </div>
+            <input type="button" value="SUBSCRIBE" onclick="greet();">
+            <p id="greet"></p>
 
-        <div class="grid-item quote2">
-            <p class="quotes">"What I say is, a town isn't a town without a bookstore. It may call itself a town but
-                unless it's got a
-                bookstore, it knows it's not foolin' a soul." - Neil Gaiman</p>
-        </div>
-        <div class="grid-item main2">
-            <h1>Events Calendar</h1>
-            <p id="esa"></p>
-            <button class="button" onclick="ESA()">Click
-                to find out!</button>
-        </div>
-        <div class="grid-item sidenav side-resources">
-            <h1>BookTree Features:</h1>
-            <ol>
-                <li>Wide variety of books for readers of all
-                    ages!</li>
-                <br>
-                <img src="images/kids-book.jpg" alt="kids book" style="width:250px">
-                <br>
-                <br>
-                <li>Experience the smell of a freshly cracked book!</li>
-                <br>
-                <img src="images/book.jpg" alt="book" style="width:250px">
-                <br>
-                <br>
-                <li>Event space for local writers and artists</li>
-                <br>
-                <img src="images/readings.jpg" alt="reading" style="width:250px">
-                <br>
-                <br>
 
-            </ol>
-            </p>
-
-        </div>
-    </div>
-    <div>
-        <div class="footer">
-            Created by &copy; BookTree Kirkland
+            <p style="text-align:right">BOOKTREE | (425) 202-7791</p>
         </div>
     </div>
 
@@ -157,11 +150,7 @@
     <br>
 
     <script>
-        function ESA() {
-            let ESAparagraph = document.getElementById('esa')
-            ESAparagraph.innerHTML = '';
-            ESAparagraph.style.display = 'block'
-        }
+
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -189,6 +178,16 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
+        }
+
+        // function for the greet
+        function greet() {
+            // grab the greet paragraph
+            let greetParagraph = document.getElementById("greet");
+
+            // get values from the form
+            eaddress = document.getElementById("eaddress").value;
+            greetParagraph.innerHTML = "Thank you for signing up! Your " + eaddress + " inbox will begin recieving BookTree updates shortly!";
         }
     </script>
 </body>
