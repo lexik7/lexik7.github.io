@@ -58,7 +58,6 @@ p {
     max-width: 80em;
     margin-left: auto;
     margin-right: auto;
-    /*https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/*/
 }
 
 .grid-item {
@@ -358,4 +357,4 @@ td {
     }
 }
 
-/*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+/*I understand the slideshow code itself and how the previous/next buttons work, etc. I used a css grid because bootstrap was incompatible with my code if I wanted to only apply bootstrap to the carousel, so I found how to do a slideshow in css grid from: https://www.w3schools.com/howto/howto_js_slideshow.asp*/

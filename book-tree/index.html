@@ -27,7 +27,6 @@
             </div>
         </div>
         <div class="grid-item main1">
-            <!-- Slideshow container -->
             <h1>Our Mission</h1>
             <p>BookTree's goal is to help every book browser find an interesting satisfying new or gently-used
                 book. We host
@@ -35,7 +34,6 @@
                 and a community gathering place. </p>
             <div class="slideshow-container">
 
-                <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
                     <img src="images/book.jpg" style="width:100%; filter: brightness(75%);">
@@ -55,7 +53,6 @@
                     <div class="text">Event space for local writers and artists</div>
                 </div>
 
-                <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
@@ -88,7 +85,7 @@
                 events!</a>
         </div>
         <div class="grid-item sidenav side-resources">
-            <h1>Store hours:</h1>
+            <h1>Store hours</h1>
             <table>
                 <tr>
                     <td>Monday</td>
@@ -144,12 +141,10 @@
         let slideIndex = 1;
         showSlides(slideIndex);
 
-        // Next/previous controls
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
 
-        // Thumbnail image controls
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
@@ -170,12 +165,9 @@
             dots[slideIndex - 1].className += " active";
         }
 
-        // function for the greet
         function greet() {
-            // grab the greet paragraph
             let greetParagraph = document.getElementById("greet");
 
-            // get values from the form
             eaddress = document.getElementById("eaddress").value;
             greetParagraph.innerHTML = "Thank you for signing up! Your " + eaddress + " inbox will begin recieving BookTree updates shortly!";
         }
