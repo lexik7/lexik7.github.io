@@ -1,0 +1,48 @@
+body {
+    background-color: gray;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightsalmon;
+    margin: 40px auto;
+    animation-name: sqaure-to-circle;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0;
+        background-color: lightsalmon;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        border-radius: 50% 0 0 0;
+        background-color: darksalmon;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        border-radius: 50% 50% 0 0;
+        background-color: salmon;
+        transform: rotate(90deg);
+    }
+
+    70% {
+        border-radius: 50% 50% 50% 0;
+        background-color: darksalmon;
+        transform: rotate(135deg);
+    }
+
+    100% {
+        border-radius: 50%;
+        background-color: lightsalmon;
+        transform: rotate(180deg);
+    }
+}
