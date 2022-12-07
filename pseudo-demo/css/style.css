@@ -1,0 +1,94 @@
+body {
+    background-color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2,
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: white;
+    padding: 20px;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    color: black;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+a.special-link {
+    color: orange;
+}
+
+.hover-div {
+    color: white;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hover-div:hover {
+    background-color: cornflowerblue;
+}
+
+p:first-child {
+    color: green;
+
+}
+
+p:last-child {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.tooltip p {
+    display: none;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.tooltip:hover p {
+    display: block;
+}
+
+.pseudo-elements::first-letter {
+    color: blue;
+}
+
+.pseudo-elements::before {
+    content: "READ THIS: ";
+    font-weight: bold;
+}
+
+.pseudo-elements::after {
+    content: " - REMEMBER THIS";
+    font-weight: bold;
+}
