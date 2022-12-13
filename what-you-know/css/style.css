@@ -42,6 +42,12 @@ ol {
     font-weight: 550;
     font-style: normal;
     font-size: large;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .grid-container {
@@ -101,21 +107,25 @@ ol {
 }
 
 .button {
-    background-color: rgb(100, 129, 169);
-    border: none;
+    background-color: rgb(138, 156, 181);
+    border: 2px solid rgb(106, 130, 163);
     border-radius: 10px;
     color: rgb(36, 26, 17);
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
     margin: 4px 2px;
     cursor: pointer;
     font-family: byker, sans-serif;
     font-weight: 700;
-    font-style: normal;
-    ;
+    font-style: italic;
+}
+
+.button:hover {
+    background-color: rgb(106, 130, 163);
+    border: 2px solid rgb(84, 105, 135);
 }
 
 .visit {
@@ -167,15 +177,111 @@ ol {
     grid-row: 5;
 }
 
-table,
-td {
+.hero-text {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 10px black;
+    color: white;
+    font-family: byker, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
 }
 
-* {
-    box-sizing: border-box
+.member1 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.info1 {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+}
+
+.member2 {
+    grid-column: 3 / span 1;
+    grid-row: 4;
+}
+
+.info2 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.member3 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.info3 {
+    grid-column: 3 / span 1;
+    grid-row: 5;
+}
+
+.member4 {
+    grid-column: 3 / span 1;
+    grid-row: 6;
+}
+
+.info4 {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+}
+
+.member5 {
+    grid-column: 1 / span 2;
+    grid-row: 7;
+}
+
+.info5 {
+    grid-column: 3 / span 1;
+    grid-row: 7;
+}
+
+.member6 {
+    grid-column: 3 / span 1;
+    grid-row: 8;
+}
+
+.info6 {
+    grid-column: 1 / span 2;
+    grid-row: 8;
+}
+
+.member7 {
+    grid-column: 1 / span 2;
+    grid-row: 9;
+}
+
+.info7 {
+    grid-column: 3 / span 1;
+    grid-row: 9;
+}
+
+.member-info li {
+    font-size: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    list-style-type: none;
+    text-align: center;
+    font-family: byker, sans-serif;
+    font-size: 17px;
+}
+
+ol a:link {
+    color: rgb(7, 7, 175);
+}
+
+ol a:visited {
+    color: indigo;
+}
+
+ol a:hover {
+    color: rgb(0, 60, 255);
+}
+
+ol a:active {
+    color: darkslateblue;
 }
