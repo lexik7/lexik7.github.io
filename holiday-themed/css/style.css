@@ -1,0 +1,71 @@
+h1 {
+    font-family: rough-love, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+    font-size: 75px;
+
+    color: rgb(241, 225, 205);
+}
+
+p {
+    font-family: filmotype-keynote, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+    font-size: 50px
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.information {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.lights {
+    width: 740px;
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    margin-top: 150px;
+    margin-left: 70px;
+}
+
+.internal {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+.button {
+    background-color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: rgb(36, 26, 17);
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: filmotype-keynote, sans-serif;
+    font-weight: 400;
+}
+
+.button:hover {
+    background-color: rgb(203, 184, 159);
+}
