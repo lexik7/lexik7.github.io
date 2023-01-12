@@ -1,3 +1,43 @@
+body {
+    background-color: lightblue;
+}
+
 .menu-item {
     font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: white;
+    padding: 40px;
+    border: 2px solid lightskyblue;
+
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav li {
+    float: right;
+}
+
+#nav li a {
+
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: larger;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
 }
