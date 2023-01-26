@@ -152,6 +152,14 @@ footer {
     .nav a {
         width: 30%;
     }
+
+    .side1 {
+        width: 100%;
+    }
+
+    .side2 {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:620px) {
