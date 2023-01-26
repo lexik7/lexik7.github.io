@@ -3,31 +3,47 @@
 }
 
 body {
-    color: gray;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(224, 218, 211);
+}
+
+.container {
+    margin: 25px 75px;
+    background-color: rgb(224, 218, 211);
 }
 
 .header {
-    background-color: darkgray;
+    background-color: rgb(152, 134, 111);
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+}
+
+.top {
+    float: left;
+    width: 50%;
+}
+
+.nav a {
+    background-image: linear-gradient(to right, rgb(179, 170, 156), rgb(152, 134, 111), rgb(179, 170, 156));
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    margin: 5px 5px;
+    text-align: center;
+    width: 25%;
+    float: left;
+    border-radius: 10px;
 }
 
 .left {
     float: left;
     width: 20%;
-}
-
-.nav a {
-    background-color: darkgray;
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 8px;
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
 }
 
 .main {
@@ -36,18 +52,42 @@ body {
     padding: 0 20px;
 }
 
+
 .right {
     float: left;
     width: 20%;
-    background-color: darkgray;
+    background-color: rgb(152, 134, 111);
     color: white;
     padding: 15px;
-    margin-top: 10px;
     margin: 10px 0;
 }
 
+button {
+    background-image: radial-gradient(rgb(179, 170, 156), rgb(152, 134, 111));
+    border: 2px solid rgb(125, 108, 85);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: radial-gradient(rgb(179, 170, 156), rgb(125, 108, 85));
+    border: 2px solid rgb(101, 86, 66);
+}
+
+.button-link {
+    text-decoration: none;
+    color: white;
+}
+
 .footer {
-    background-color: darkgray;
+    background-color: rgb(152, 134, 111);
     color: white;
     padding: 10px;
     clear: both;
@@ -58,13 +98,59 @@ footer {
     margin: 0 auto;
 }
 
+.left-gallery {
+    float: left;
+    width: 32%;
+    margin: 5px;
+}
+
+.main-gallery {
+    float: left;
+    width: 35%;
+    margin: 5px;
+}
+
+
+.right-gallery {
+    float: left;
+    width: 30%;
+    margin: 5px;
+}
+
+.side1 {
+    float: left;
+    width: 45%;
+    margin: 5px;
+
+}
+
+.side2 {
+    float: left;
+    width: 50%;
+    margin: 5px;
+
+}
+
 @media (min-width:621px) and (max-width:1000px) {
     .main {
-        width: 80%;
+        width: 60%;
+        font-size: small;
+    }
+
+    .left {
+        width: 40%;
     }
 
     .right {
         width: 100%;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .nav a {
+        width: 30%;
     }
 }
 
@@ -72,7 +158,9 @@ footer {
 
     .left,
     .main,
-    .right {
+    .right,
+    .top,
+    .nav a {
         width: 100%;
     }
 }
