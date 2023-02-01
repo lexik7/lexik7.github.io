@@ -34,7 +34,6 @@ body {
     float: left;
     width: 30%;
     padding: 40px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .logo p {
@@ -173,10 +172,6 @@ footer {
     }
 
     .right {
-        width: 100%;
-    }
-
-    .top {
         width: 100%;
     }
 
