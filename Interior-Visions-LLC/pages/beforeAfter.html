@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Visions LLC - Before & After</title>
+
+    <!--Bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" />
+    <link rel="icon" type="image/x-icon" href="../Images/browse_icon.JPG" />
+ <!-- from the site: https://www.w3schools.com/html/html_favicon.asp-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <script href="../js/script.js"></script>
+    <style>
+        .scroll-bar {
+            /*Box positioning stuff*/
+            overflow-y: visible;
+            /*Box shape*/
+            width: 100%;
+            height: 420px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .words {
+            /*Positioning stuff*/
+            position: absolute;
+            top: 0;
+            /*Box model stuff*/
+            /*Animation*/
+            animation: scroll 120s infinite;
+            width: 100%;
+            margin-left: 1%;
+            margin-right: 1%;
+            animation-timing-function: linear;
+            animation-play-state: running;
+        }
+        /* Pauses the animation on hover */
+        
+        .words:hover {
+            animation-play-state: paused;
+        }
+        
+        span {
+            /* moving element */
+            display: block;
+            background: rgb(255, 255, 255);
+            /*Typography stuff*/
+            color: rgb(0, 0, 0);
+        }
+        
+        @keyframes scroll {
+            /* animation to scroll */
+            0% {
+                top: -50%;
+            }
+            100% {
+                top: -1100%;
+            }
+        }
+        /* left side of code */
+        
+        .Before {
+            float: left;
+            width: 50%;
+        }
+        /* right side of code */
+        
+        .After {
+            float: right;
+            width: 50%;
+        }
+        /* adjusts images for different resolutions */
+        
+        img {
+            height: auto;
+            width: auto;
+        }
+        /* modifications to links */
+        
+        .contact_link {
+            background-color: transparent;
+            color: black;
+            margin: 30px;
+            border: double red 2px;
+            border-radius: 5%;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+        /* more modifications to links */
+        
+        .contact_link:hover {
+            background-color: rgb(228, 228, 228);
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="overflow-y: auto">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="../Images/Back-up-logo.PNG" style="height: 80px; width: 365px" /></a>
+        <!--Ln 110-142 is navigation-->
+        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse collapsibleNavBar" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="process.html">Process</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="beforeAfter.html">Before & After</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <br />
+    </nav>
+    <br />
+    <h2 style="text-align: center">What is your dream design?</h2>
+    <br />
+    <h3 style="text-align: center">Here are some of ours:</h3>
+    <div class="container">
+        <!--div's up above that affect animation and positioning are here-->
+        <h4 style="margin-left: 5%">Mission Statement</h4>
+        <p style="margin-left: 5%; margin-right: 5%">
+            While our experienced designers have their own styles and preferences built over combined decades spent in the industry, we don’t believe in a one-size-fits-all approach. Rather, we take into account that every home or business is different and requires
+            its own customized design that combines the needs and wishes of the client paired with functional and beautiful design solutions. We believe in simplifying spaces with clean lines, open space and a minimalist approach, showcasing the natural
+            beauty of the materials and finishes. Some of the principles and concepts we consider when providing you with a unique design are: The architectural style of your home and its interiors and how we can enhance its function + style, the size
+            of the space, the current layout and how it is works to meet your needs. We also seek to create in every project a strong balance that contrasts and emphasises your needs through architectural features and design elements. Which includes things
+            such as evaluating the natural light that the space has and how our lighting design solutions can shape the feel of that space, layering the light sources enhances the design and functionality of the home or business, using color theory to
+            create a specific effect designed to meet the needs and design intent of the living or working space and finally proper use of textures, finishes, and materials that reflect the desired design solution.
+        </p>
+    </div>
+    <h4 style="margin-left: 42%; margin-right: 38%">Before & After</h4>
+    <div class="scroll-bar">
+        <!--div class words is refering to all content shown within the span elements-->
+        <div class="words">
+            <div class="Before">
+                <!--Ln 162 - 409 are all the span elements and their contained content-->
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 450px;
+              "
+              src="../Images/Before-1.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-2.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-3.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-4.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-5.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-6.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-7.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-8.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-9.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-10.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-left: -2%;
+                margin-top: 200px;
+              "
+              src="../Images/Before-11.PNG"
+              alt=""
+          /></span>
+            </div>
+
+            <div class="After">
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 450px;
+              "
+              src="../Images/After-1.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-2.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-3.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-4.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-5.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-6.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-7.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-8.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-9.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-10.PNG"
+              alt=""
+          /></span>
+
+                <span><img
+              style="
+                width: 100%;
+                height: 350px;
+                margin-right: 1%;
+                margin-top: 200px;
+              "
+              src="../Images/After-11.PNG"
+              alt=""
+          /></span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer bg-dark" style="text-align: center">
+
+      <div>
+
+          <p>COPYRIGHT 2023 FABIAN BORRE | INTERIOR VISIONS</p>
+
+          <a href="https://twitter.com/FabianBorre" target="_blank"><img src="../Images/twitter.png" alt="Twitter" style="width: 2%; margin: 0 5px;"></a>
+
+          <a href="https://www.facebook.com/InteriorVisionsLLC/posts/5115426815193952" target="_blank"><img src="../Images/facebook.png" alt="Facebook" style="width: 3%; margin: 0 5px;"></a>
+
+          <a href="https://www.instagram.com/interiorvisions_fabianborre/" target="_blank"><img src="../Images/instagram.png" alt="Instagram" style="width: 2%; margin: 0 5px;"></a>
+
+          <a href="https://www.pinterest.com/fabianborre/" target="_blank"><img src="../Images/pinterest.png" alt="Pinterest" style="width: 2%; margin: 0 5px;"></a>
+
+          <a href="https://www.linkedin.com/in/fabianborre/" target="_blank"><img src="../Images/linkedin.png" alt="LinkedIn" style="width: 2%; margin: 0 5px;"></a>
+
+          <br>
+
+      </div>
+
+  </footer>
+</body>
+
+</html>

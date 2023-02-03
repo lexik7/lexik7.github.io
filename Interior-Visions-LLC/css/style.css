@@ -1,0 +1,37 @@
+.nav-item a:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+    color: crimson;
+    font-family: elza-narrow, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer div {
+    color: white;
+}
+
+footer a,
+footer a:hover {
+    color: white;
+}
+
+footer col {
+    margin: 10px;
+}
+
+footer button {
+    margin: 10px;
+}
