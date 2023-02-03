@@ -10,6 +10,8 @@ body {
     width: 100vw;
 }
 
+/*CSS starting below from https://codepen.io/alvarotrigo/pen/PoJGObg*/
+
 .toggler {
     /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
     z-index: 2;
@@ -149,6 +151,9 @@ body {
     color: rgb(178, 168, 154);
     ;
 }
+
+/*CSS from above from https://codepen.io/alvarotrigo/pen/PoJGObg*/
+
 
 .container {
     background-color: rgb(224, 218, 211);
