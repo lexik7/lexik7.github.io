@@ -1,0 +1,20 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: #031926;
+}
+
+nav {
+    background-color: #031926;
+
+}
+
+.container {
+    padding: 70px 50px;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
