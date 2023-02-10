@@ -10,12 +10,13 @@ h3 {
 
 .container {
     margin: 0 auto;
-    width: 1000px;
+    width: 800px;
     background-color: rgb(220, 214, 214);
     padding: 20px;
+    border: 1px solid rgb(196, 184, 184);
 }
 
-a:hover {
+.header-link a:hover {
     color: blue;
     transition-duration: 0.2s;
 }
@@ -26,4 +27,25 @@ pre code {
     display: block;
     padding: 10px;
     color: black;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(173, 159, 159);
+    border: 1px solid rgb(130, 119, 119);
+    margin-left: 330px;
+    margin-top: 10px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    padding: 10px;
+    background-color: rgb(128, 113, 113);
+    border: 1px solid rgb(90, 79, 79);
+    color: rgb(196, 181, 181);
+    transition-duration: 0.5s;
 }

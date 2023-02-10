@@ -14,9 +14,9 @@
         <h1>CSS Loading Animation Demo</h1>
         <h3>Learn how to build a purely CSS animation to add to any website!</h3>
         <p>In this tutorial, we will make a moving banner, text, and other elements using just CSS. Click <a
-                href="https://lexik7.github.io/self-demo/">here</a> to
+                href="https://lexik7.github.io/self-demo/" class="header-link" target="_blank">here</a> to
             see the full final product! Below is a preview:</p>
-        <iframe src="https://lexik7.github.io/self-demo/" frameborder="0" style="margin-left:330px"></iframe>
+        <iframe src="https://lexik7.github.io/self-demo/" frameborder="0" style="margin-left:230px"></iframe>
 
         <br>
 
@@ -25,42 +25,42 @@
             different elements that we will animate with CSS later on. Add the code below into a new "index.html" file:
         </p>
         <pre>
-                <code>
-                    &lt;div class="container"&gt;
-                    &lt;div class="split-screen"&gt;&lt;/div&gt;
-                    &lt;div class="background-image"&gt;&lt;/div&gt;
-                    &lt;div class="content"&gt;
-                    &lt;p&gt;Hello&lt;span class="comma"&gt;&lt;/span&gt;&lt;/p&gt;
-                    &lt;p&gt;World&lt;/p&gt;
-                    &lt;/div>
-                    &lt;/div>               
-                </code>
-            </pre>
+         <code>
+         &lt;div class="container"&gt;
+         &lt;div class="split-screen"&gt;&lt;/div&gt;
+         &lt;div class="background-image"&gt;&lt;/div&gt;
+         &lt;div class="content"&gt;
+         &lt;p&gt;Hello&lt;span class="comma"&gt;&lt;/span&gt;&lt;/p&gt;
+         &lt;p&gt;World&lt;/p&gt;
+         &lt;/div>
+         &lt;/div>               
+         </code>
+         </pre>
 
         <h2>Step 2: CSS Styling</h2>
         <p>Next, we must style to webpage and its HTML that we just created. We will start with simple stylings and
             wait to style the animations later. Make a "style.css" page, and add the following code:</p>
         <pre>
-                <code>
-                    body {
-                        margin: 0;
-                        background-color: #b1bcbf;
-                      }
-                      .container {
-                        width: 100%;
-                        height: 100vh;
-                        position: relative;
-                      }
-                      .background-image {
-                        width: 50%;
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        margin: auto;
-                        background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg");
-                        background-size: cover;
-                      }              
+        <code>
+            body {
+                 margin: 0;
+                 background-color: #b1bcbf;
+                }
+                 .container {
+                  width: 100%;
+                 height: 100vh;
+                 position: relative;
+                 }
+                .background-image {
+                 width: 50%;
+                 position: absolute;
+                 top: 0;
+                 bottom: 0;
+                 left: 0;
+                 margin: auto;
+                 background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg");
+                 background-size: cover;
+                 }              
                 </code>
             </pre>
         <p>Note that there is a background image that will serve as the animated image during the animation. This image
@@ -71,16 +71,16 @@
         <p>To create the split-screen animation, we must recreate a certain animation timeline by adding timings for
             each animated element to create a smooth animation. Add the code below into your "style.css" page.</p>
         <pre>
-                <code>
-                    .split-screen {
-                        width: 100%;
-                        background-color: #2c2d2b;
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
-                        z-index: 2;
-                      }
+        <code>
+             .split-screen {
+                 width: 100%;
+                 background-color: #2c2d2b;
+                 position: absolute;
+                 right: 0;
+                 top: 0;
+                 bottom: 0;
+                 z-index: 2;
+                 }
                 </code>
             </pre>
         <p>Next, we must define the animation using keyframes. Keyframes allow us to create specific timings throughout
@@ -89,16 +89,16 @@
             will shift between these properties for that element on a specific timeline.</p>
         <h4>First keyframe: setting the split screen from 100% to 50% of the page width:</h4>
         <pre>
-            <code>
-                @keyframes reduceSize {
-                    from {
-                      width: 100%;
-                    }
-                    to {
-                      width: 50%;
-                    }
-                  }
-            </code>
+         <code>
+             @keyframes reduceSize {
+                 from {
+                   width: 100%;
+                 }
+                 to {
+                   width: 50%;
+                 }
+              }
+         </code>
         </pre>
         <h4>Assign Animation Keyframes to an Element</h4>
         <p>The animated keyframes we just coded above msut now be assigned to an HTML element. We can do this using the
@@ -106,26 +106,26 @@
             "animation-delay" properties. To make sure the animation remains in its final state without reverting back
             or restarting after its completion, we use the "animation-fill-mode" property:</p>
         <pre>
-                <code>
-                    animation-name: reduceSize;
-                    animation-duration: 1.5s;
-                    animation-delay: 0.5s;
-                    animation-fill-mode: forwards;
-                </code>
-            </pre>
+        <code>
+             animation-name: reduceSize;
+             animation-duration: 1.5s;
+             animation-delay: 0.5s;
+             animation-fill-mode: forwards;
+        </code>
+         </pre>
         <p>You can add these properties under the ".split-screen" class in your css page. A shorthand notation for all
             four of these properties together could also be used instead:</p>
         <pre>
-                <code>
-                    animation: reduceSize 1.5s 0.5s forwards;
-                </code>
+         <code>
+             animation: reduceSize 1.5s 0.5s forwards;
+         </code>
             </pre>
 
         <h2>The Second Animation</h2>
         <p>The next animation will allow the split screen banenr to appear on move to the right of the screen. Add the
             following into your css page:</p>
         <pre>
-            <code> 
+        <code> 
             @keyframes moveRight {
                 from {
                   left: 0%;
@@ -133,7 +133,8 @@
                 to {
                   left: 50%;
                 }
-              }</code>
+              }
+        </code>
         </pre>
         <h2>Animating Page Content</h2>
         <p>Next, we must animate the content on the actual page. The three animations we will add are:</p>
@@ -144,29 +145,80 @@
         </ul>
         <p>We must define all the animations and add the code into our css page:</p>
         <pre>
-            <code>
-                @keyframes fadeInUp {
-                    from {
-                      transform: translateY(100vh);
-                      opacity: 0;
-                    }
-                    to {
-                      transform: translateY(0);
-                      opacity: 1;
-                    }
-                  }
-                  @keyframes changeBackground {
-                    to {
-                      background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg");
-                      background-size: 200%;
-                      background-position: center;
-                      background-clip: text;
-                      -webkit-background-clip: text;
-                      color: transparent;
-                    }
-                  }
+         <code>
+             @keyframes fadeInUp {
+                 from {
+                     transform: translateY(100vh);
+                     opacity: 0;
+                 }
+                to {
+                     transform: translateY(0);
+                     opacity: 1;
+                 }
+                }
+             @keyframes changeBackground {
+                 to {
+                     background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg");
+                     background-size: 200%;
+                     background-position: center;
+                     background-clip: text;
+                     -webkit-background-clip: text;
+                     color: transparent;
+                 }
+                }
             </code>
         </pre>
+        <p>We must also include opacity and transform properties in the content styling of the css page so that the
+            "fadeUp" animation
+            allows the content to fade in and upwards:</p>
+        <pre>
+         <code>
+             .content {
+                 color: white;
+                 font-size: 10vw;
+                 text-transform: uppercase;
+                 position: absolute;
+                 width: fit-content;
+                 height: fit-content;
+                 top: 0;
+                 left: 0;
+                 right: 0;
+                 bottom: 0;
+                 margin: auto;
+                 z-index: 4;
+                 opacity: 0;
+                 transform: translateY(100vh);
+                 animation: 
+                     fadeInUp 2s 0.5s, 
+                     moveRight 1.5s 3s,
+                        changeBackground 1.5s 3s;
+                     animation-fill-mode: forwards;
+                 }
+                </code>
+            </pre>
+        <h2>Last Small Animation</h2>
+        <p>Lastly, we can animate the "comma" within the content by adding the following to the css page:</p>
+        <pre>
+        <code>
+            .content .comma {
+                color: #2c2d2b;
+                opacity: 1;
+                 animation: fadeOut 0.5s forwards 2.5s;
+             }
+            @keyframes fadeOut {
+                 from {
+                     opacity: 1;
+                 }
+                 to {
+                     opacity: 0;
+                    }
+                }
+            </code>
+        </pre>
+        <h1>And We're Finished!</h1>
+        <iframe src="https://lexik7.github.io/self-demo/" frameborder="0" style="margin-left:230px"></iframe>
+        <br>
+        <button><a href="https://lexik7.github.io/self-demo/" target="_blank">Full Preview</a></button>
     </div>
 </body>
 
