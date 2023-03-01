@@ -72,7 +72,7 @@ carousel-caption p {
     border: 3px solid rgba(148, 148, 183, 0.696);
     box-shadow: 0 4px 6px 0 rgba(174, 174, 209, 0.696), 0 4px 15px 0 rgba(203, 203, 225, 0.696);
     border-radius: 10px;
-    color: rgb(36, 26, 17);
+    color: black;
     padding: 2px 5px;
     text-align: center;
     text-decoration: none;
@@ -95,6 +95,10 @@ carousel-caption p {
 }
 
 a.link-styling {
+    color: black;
+}
+
+label {
     color: black;
 }
 
