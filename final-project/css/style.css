@@ -26,6 +26,10 @@ ul li {
     list-style-type: none;
 }
 
+.navbar-nav {
+    margin-left: 420px;
+}
+
 .container {
     padding: 50px 50px;
     font-family: "articulat-cf", sans-serif;
