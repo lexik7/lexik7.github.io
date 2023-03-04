@@ -353,7 +353,7 @@ input.footer-input:focus {
 }
 
 .social-icons a {
-    background-color: #eceeef;
+    background-color: rgb(230, 225, 225);
     color: #818a91;
     font-size: 16px;
     display: inline-block;
@@ -372,7 +372,7 @@ input.footer-input:focus {
 .social-icons a:focus,
 .social-icons a:hover {
     color: #fff;
-    background-color: #29aafe
+    background-color: rgb(230, 225, 225)
 }
 
 .social-icons.size-sm a {
@@ -390,11 +390,11 @@ input.footer-input:focus {
     background-color: #00aced
 }
 
-.social-icons a.linkedin:hover {
+.social-icons a.instagram:hover {
     background-color: #007bb6
 }
 
-.social-icons a.dribbble:hover {
+.social-icons a.pinterest:hover {
     background-color: #ea4c89
 }
 
