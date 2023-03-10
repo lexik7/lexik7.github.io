@@ -57,11 +57,8 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <img style="width: 90%; box-shadow: 0 0px 2px 0 #031926, 0 4px 15px 0 #031926;"
-                    src="images/headshot.jpg" alt="placeholder">
-            </div>
-            <div class="col-6">
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <h1 style="text-align: center;">Who Am I?</h1>
                 <h2>My Life</h2>
                 <p> My name is Lexi Kelley. I am 16 years old, Japanese American, and I go by she/her pronouns. I was
@@ -70,42 +67,29 @@
                     and exploring different hobbies. I
                     also hope to travel the world and learn new languages during my college years and beyond.
                 </p>
-                <h2 style="text-align: right;">Education</h2>
-                <p style="text-align: right;">Throughout my academic career, I have explored a variety of programs.
+                <h2 class="text-right">Education</h2>
+                <p class="text-right">Throughout my academic career, I have explored a variety of programs.
                     These include biology, chemistry and physics; algebra and calculus;
                     worldwide historical, cultural and literature studies; photography, web design, and other arts; and
                     language studies. I've come to prefer the art, language, and technology departments over STEM
                     classes. These courses favor my current interests and hopes for future areas of study.
                 </p>
-                <p style="text-align: right;"><button class="home-button"><a style="color:rgb(230, 225, 225);"
+                <p class="text-right"><button class="home-button"><a style="color:rgb(230, 225, 225);"
                             href="portfolio.html">MY
                             PORTFOLIO</a></button></p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <p style="text-align: center;" class="info-image"><img
+                        style="width: 90%; box-shadow: 0 0px 2px 0 #031926, 0 4px 15px 0 #031926;"
+                        src="images/headshot.jpg" alt="placeholder">
+                </p>
             </div>
         </div>
 
         <hr>
         <br>
         <div class="row">
-
-            <div class="col-6">
-                <h2>Family Life and Independence</h2>
-                <p> In my close family, I have a sister, mom, dad, grandma, and two dogs. My dogs are my pride and joy,
-                    and have been my main focus for my past photography projects. My sister currently lives in
-                    California for college, and as of two years ago, I live in two seperate households with each parent.
-                    With a relatively new living arrangement, a recently obtained driver's license, and only a few
-                    months until I'll turn 17, I am learning independence financially and socially to prepare for
-                    college and adult life that is so quickly approaching.
-                </p>
-                <h2 style="text-align: right;">Current Interests</h2>
-                <p style="text-align: right;">Over the past three years, I have been diving deeper into my life-long
-                    passion for music, photography, and film. Recently, I have been exploring the world and mechanics of
-                    cinematography, hoping to pursue the field of study in college and as a career in later life. I've
-                    also taken up a small side hobby and project surrounding music and social media.</p>
-                <p style="text-align: right;"><button class="home-button"><a style="color:rgb(230, 225, 225);"
-                            href="currentProject.html">MY CURRENT
-                            PROJECT</a></button></p>
-            </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <div id="carouselExampleControls" style="box-shadow: 0 0px 2px 0 #031926, 0 4px 15px 0 #031926;"
                     class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -138,6 +122,24 @@
                     </ul>
                 </div>
             </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 info-responsive">
+                <h2>Family Life and Independence</h2>
+                <p> In my close family, I have a sister, mom, dad, grandma, and two dogs. My dogs are my pride and joy,
+                    and have been my main focus for my past photography projects. My sister currently lives in
+                    California for college, and as of two years ago, I live in two seperate households with each parent.
+                    With a relatively new living arrangement, a recently obtained driver's license, and only a few
+                    months until I'll turn 17, I am learning independence financially and socially to prepare for
+                    college and adult life that is so quickly approaching.
+                </p>
+                <h2 class="text-right">Current Interests</h2>
+                <p class="text-right">Over the past three years, I have been diving deeper into my life-long
+                    passion for music, photography, and film. Recently, I have been exploring the world and mechanics of
+                    cinematography, hoping to pursue the field of study in college and as a career in later life. I've
+                    also taken up a small side hobby and project surrounding music and social media.</p>
+                <p class="text-right"><button class="home-button"><a style="color:rgb(230, 225, 225);"
+                            href="currentProject.html">MY CURRENT
+                            PROJECT</a></button></p>
+            </div>
         </div>
     </div>
     <footer class="site-footer">
@@ -155,8 +157,10 @@
                         <input class="footer-input" style="height: 75px; width: 90%;" type="text" id="description"
                             name="description">
                         <br>
-                        <button type="button" class="footer-button"
-                            onclick="alert('Thanks for contacting! Expect a response in 1-2 business days.')">SUBMIT</button>
+                        <br>
+                        <p style="text-align: center;"><button type="button" class="footer-button"
+                                onclick="alert('Thanks for contacting! Expect a response in 1-2 business days.')">SUBMIT</button>
+                        </p>
                     </form>
                 </div>
 
@@ -178,7 +182,7 @@
                         <li>Mobile : 217-589-8662</li>
                         <li>Address : 445 12th Ave S Bellevue, WA</li>
                     </ul>
-                    <div style="margin-right:150px;">
+                    <div class="footer-social-icons">
                         <ul class="social-icons">
                             <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"
                                     style="width: 65%; margin: 0 5px;"></a>

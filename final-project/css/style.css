@@ -37,6 +37,11 @@ ul li {
     font-style: normal;
 }
 
+.home-img {
+    width: 100%;
+    filter: brightness(75%);
+}
+
 .carousel {
     width: 100%;
 }
@@ -138,6 +143,19 @@ carousel-caption p {
 .home-button a {
     color: rgb(230, 225, 225);
     font-size: small;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.contact-picture {
+    width: 505px;
+    box-shadow: 0 0px 5px 0 #031926, 0 4px 15px 0 #031926;
 }
 
 .socials {
@@ -300,7 +318,6 @@ input.footer-input:focus {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 15px 200px;
     cursor: pointer;
     width: 100px;
     height: 30px;
@@ -331,6 +348,10 @@ input.footer-input:focus {
 .footer-button a {
     color: rgb(230, 225, 225);
     font-size: small;
+}
+
+.footer-social-icons {
+    margin-right: 160px;
 }
 
 .social-icons {
@@ -376,3 +397,167 @@ input.footer-input:focus {
 }
 
 /*most of the above footer code from: https://csshint.com/html-css-footer-design/ */
+
+@media (min-width:621px) and (max-width:1000px) {
+
+    .home-img {
+        width: 130%;
+    }
+
+    .hero-text {
+        font-size: smaller;
+    }
+
+    .hero-text h1 {
+        font-size: xx-large;
+    }
+
+    .home-button {
+        width: 150px;
+        height: 30px;
+    }
+
+    .home-button a {
+        font-size: smaller;
+    }
+
+    .home-button:hover {
+        width: 140px;
+        height: 28px;
+    }
+
+    .home-button:active {
+        width: 135px;
+        height: 26px;
+    }
+
+    .home-button a:hover {
+        text-decoration: none;
+    }
+
+    .footer-social-icons {
+        margin-right: 25px;
+    }
+
+    .info-responsive {
+        margin-top: 20px;
+    }
+
+    .info-img img {
+        width: 50%;
+    }
+
+    .carousel-item img {
+        max-height: 500px;
+    }
+
+    .text-right {
+        text-align: center;
+    }
+
+    .contact-picture {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .socials {
+        width: 75%;
+        transition-duration: 0.3s;
+    }
+
+    .socials:hover {
+        width: 70%;
+        transition-duration: 0.3s;
+    }
+
+    .socials:active {
+        width: 65%;
+        transition-duration: 0.3s;
+    }
+}
+
+@media only screen and (max-width:620px) {
+
+    .home-img {
+        width: 140%;
+    }
+
+    .home-img img {
+        background-position: left;
+    }
+
+    .hero-text {
+        font-size: x-small;
+    }
+
+    .hero-text h1 {
+        font-size: x-large;
+    }
+
+    .home-button {
+        width: 100px;
+        height: 25px;
+    }
+
+    .home-button a {
+        font-size: smaller;
+    }
+
+    .home-button:hover {
+        width: 140px;
+        height: 28px;
+    }
+
+    .home-button:active {
+        width: 135px;
+        height: 26px;
+    }
+
+    .home-button a:hover {
+        text-decoration: none;
+    }
+
+    .footer-social-icons {
+        margin-right: 25px;
+    }
+
+    .info-responsive {
+        margin-top: 20px;
+    }
+
+    .info-img img {
+        width: 50%;
+    }
+
+    .carousel-item img {
+        max-height: 500px;
+    }
+
+    .text-right {
+        text-align: center;
+    }
+
+    .contact-picture {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .socials {
+        width: 75%;
+        transition-duration: 0.3s;
+    }
+
+    .socials:hover {
+        width: 70%;
+        transition-duration: 0.3s;
+    }
+
+    .socials:active {
+        width: 65%;
+        transition-duration: 0.3s;
+    }
+
+    .site-footer {
+        padding: 20px;
+    }
+}
