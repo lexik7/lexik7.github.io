@@ -479,7 +479,7 @@ input.footer-input:focus {
 @media only screen and (max-width:620px) {
 
     .home-img {
-        width: 140%;
+        width: 200%;
     }
 
     .home-img img {
