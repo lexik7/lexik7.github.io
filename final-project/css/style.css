@@ -153,6 +153,10 @@ carousel-caption p {
     text-align: left;
 }
 
+.media-icons {
+    padding-top: 75px;
+}
+
 .contact-picture {
     width: 505px;
     box-shadow: 0 0px 5px 0 #031926, 0 4px 15px 0 #031926;
@@ -404,10 +408,6 @@ input.footer-input:focus {
         width: 130%;
     }
 
-    .hero-text {
-        font-size: smaller;
-    }
-
     .hero-text h1 {
         font-size: xx-large;
     }
@@ -474,29 +474,37 @@ input.footer-input:focus {
         width: 65%;
         transition-duration: 0.3s;
     }
+
+    .media-icons {
+        padding-top: 75px;
+    }
 }
 
 @media only screen and (max-width:620px) {
 
     .home-img {
-        width: 200%;
+        width: 300%;
     }
 
     .home-img img {
         background-position: left;
+        display: inline;
     }
 
     .hero-text {
-        font-size: x-small;
+        font-size: small;
+        top: 50%;
+        left: 50%;
     }
 
     .hero-text h1 {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .home-button {
-        width: 100px;
-        height: 25px;
+        width: 165px;
+        height: 35px;
+        padding-top: 3px;
     }
 
     .home-button a {
@@ -504,25 +512,29 @@ input.footer-input:focus {
     }
 
     .home-button:hover {
-        width: 140px;
-        height: 28px;
+        width: 115px;
+        height: 33px;
     }
 
     .home-button:active {
-        width: 135px;
-        height: 26px;
+        width: 110px;
+        height: 30px;
     }
 
     .home-button a:hover {
         text-decoration: none;
     }
 
+    .site-footer {
+        text-align: center;
+    }
+
     .footer-social-icons {
-        margin-right: 25px;
+        margin-right: 8px;
     }
 
     .info-responsive {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     .info-img img {
@@ -530,7 +542,21 @@ input.footer-input:focus {
     }
 
     .carousel-item img {
-        max-height: 500px;
+        max-height: 210px;
+    }
+
+    .carousel-control-next-icon:after {
+        content: '>';
+        font-size: 30px;
+        padding-left: 15px;
+        color: rgb(230, 225, 225);
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        padding-right: 15px;
+        font-size: 30px;
+        color: rgb(230, 225, 225);
     }
 
     .text-right {
@@ -543,7 +569,7 @@ input.footer-input:focus {
     }
 
     .socials {
-        width: 75%;
+        width: 16%;
         transition-duration: 0.3s;
     }
 
@@ -559,5 +585,14 @@ input.footer-input:focus {
 
     .site-footer {
         padding: 20px;
+    }
+
+    .yt iframe {
+        height: 210px;
+        width: 100%;
+    }
+
+    .media-icons {
+        padding-top: 15px;
     }
 }
