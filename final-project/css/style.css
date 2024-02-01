@@ -574,12 +574,12 @@ input.footer-input:focus {
     }
 
     .socials:hover {
-        width: 70%;
+        width: 12%;
         transition-duration: 0.3s;
     }
 
     .socials:active {
-        width: 65%;
+        width: 10%;
         transition-duration: 0.3s;
     }
 
